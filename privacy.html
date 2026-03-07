@@ -46,23 +46,30 @@
 
         h2 {
             color: var(--primary-color);
-            margin-top: 32px;
+            margin-top: 36px;
             margin-bottom: 16px;
             font-size: 1.25rem;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(156, 125, 100, 0.15);
         }
 
-        p,
-        ul {
+        p {
             margin-bottom: 16px;
             color: #555;
         }
 
         ul {
+            margin-bottom: 16px;
             padding-left: 24px;
+            color: #555;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+        }
+
+        li strong {
+            color: var(--text-main);
         }
 
         .nav-back {
@@ -83,6 +90,25 @@
             font-size: 0.9rem;
             margin-bottom: 32px;
         }
+
+        .intro {
+            background: rgba(156, 125, 100, 0.06);
+            border-left: 4px solid var(--primary-color);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 32px;
+            color: #555;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -92,39 +118,37 @@
         <h1>隱私權政策 (Privacy Policy)</h1>
         <div class="last-updated">最後更新日期：2026年3月7日</div>
 
-        <p>歡迎您使用「飲料日記
-            ShakeHealth」（以下簡稱本應用程式）。我們非常重視您的隱私權，並致力於保護您的個人資料。為了讓您能夠安心使用本應用程式的各項服務與資訊，特此向您說明本應用程式的隱私權保護政策，以保障您的權益，請您詳閱下列內容：
-        </p>
+        <div class="intro">
+            感謝您使用《飲料日記：紀錄你的每一杯幸福》（以下簡稱「本應用程式」或「我們」）。我們非常重視您的隱私權。本隱私權政策旨在說明我們如何收集、使用及保護您的資訊。
+        </div>
 
-        <h2>1. 隱私權保護政策的適用範圍</h2>
-        <p>隱私權保護政策內容，包括本應用程式如何處理在您使用本應用程式服務時收集到的個人識別資料。隱私權保護政策不適用於本應用程式以外的相關連結應用程式或網站，也不適用於非本應用程式所委託或參與管理的人員。</p>
-
-        <h2>2. 個人資料的蒐集、處理及利用方式</h2>
+        <h2>1. 我們收集的資訊與使用方式</h2>
         <ul>
-            <li>本應用程式將您的所有飲品紀錄、歷史資料以及偏好設定均儲存於您的 <strong>Apple 裝置本機 (Local Storage) 及您授權的 iCloud 帳號</strong>中。</li>
-            <li>我們<strong>不會</strong>在我們自有管理的伺服器中蒐集、儲存或分析您的任何健康數據、日記內容或飲用習慣。</li>
-            <li>為了提昇應用程式的使用體驗及修復錯誤，本應用程式會使用第三方分析工具（如 Apple 的 Crash Analytics），這些工具可能會收集匿名化、無法識別個人的當機報告及基礎使用數據。</li>
-            <li><strong>廣告服務</strong>：本應用程式整合了 Google AdMob 第三方廣告服務。根據您的 Apple 追蹤透明度 (ATT) 授權狀態，AdMob 可能會收集並使用您的廣告識別碼
-                (IDFA) 以提供個人化廣告。若您拒絕授權，您將只會看到非個人化的隨機廣告。</li>
+            <li><strong>個人健康與飲品紀錄資料：</strong>您在 App 內紀錄的所有飲用數據、卡路里、咖啡因與日記內容，預設皆安全地儲存於您設備的本機端（Local Storage）。</li>
+            <li><strong>iCloud 同步功能：</strong>若您為 Premium 訂閱會員並啟用自動備份功能，您的日記資料會透過 Apple CloudKit
+                傳輸並安全地跨設備同步。我們及任何第三方均無法讀取、存取或分享您儲存於 iCloud 的私人資料。</li>
+            <li><strong>廣告與分析資料 (Advertising &amp; Analytics)：</strong>為提供免費服務，本應用程式使用了 Google AdMob 作為第三方廣告平台。如果您同意 App
+                Tracking Transparency (ATT) 追蹤，AdMob 會收集匿名的廣告識別碼 (IDFA) 與設備資訊，以向您推播更相關的個人化廣告。</li>
+            <li><strong>付款與訂閱資訊：</strong>我們透過 Apple App Store 與 RevenueCat 處理應用程式內購買 (In-App
+                Purchases)。我們不會收集或儲存您的信用卡資訊。RevenueCat 僅記錄匿名的購買狀態與 ID 以便提供您 Premium 服務。</li>
         </ul>
 
-        <h2>3. 資料之保護</h2>
-        <p>由於您的核心資料均儲存於您的本機設備與 iCloud 中，資料的安全性完全取決於您設備的防護措施（如密碼、Face ID 等）以及 Apple 提供的雲端加密技術。我們強烈建議您妥善保管您的設備與 Apple ID
-            帳號密碼。</p>
-
-        <h2>4. 第三方 SDK 與外部連結</h2>
-        <p>本應用程式包含由第三方服務提供的軟體開發套件 (SDK)，例如 Google AdMob 與 RevenueCat (用於處理應用程式內購買)。這些第三方服務的隱私處理方式受其各自的隱私權政策規範：</p>
+        <h2>2. 第三方合作夥伴服務條款</h2>
+        <p>本應用程式使用了以下第三方服務，其隱私權政策受各自條款約束：</p>
         <ul>
-            <li>Google AdMob：<a href="https://policies.google.com/privacy" target="_blank">Google 隱私權政策</a></li>
-            <li>RevenueCat：<a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat 隱私權政策</a></li>
+            <li><strong>Apple (iCloud / App Store)：</strong><a href="https://www.apple.com/legal/privacy/"
+                    target="_blank">https://www.apple.com/legal/privacy/</a></li>
+            <li><strong>Google AdMob：</strong><a href="https://policies.google.com/privacy"
+                    target="_blank">https://policies.google.com/privacy</a></li>
+            <li><strong>RevenueCat：</strong><a href="https://www.revenuecat.com/privacy"
+                    target="_blank">https://www.revenuecat.com/privacy</a></li>
         </ul>
 
-        <h2>5. 隱私權保護政策之修正</h2>
-        <p>本應用程式隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於本網站及應用程式內。繼續使用本應用程式即表示您接受修改後的政策。</p>
+        <h2>3. 資料的分享與披露</h2>
+        <p>除上述提及之第三方廣告商與訂閱管理商（基於服務必要性）外，我們不會將您的任何資料出售、交易或轉讓給外部團體。</p>
 
-        <h2>6. 聯繫我們</h2>
-        <p>若您對本隱私權政策有任何疑問，或想提出與隱私權相關的問題，請Email至：<a href="mailto:contact@shakehealth.app">contact@shakehealth.app</a>。
-        </p>
+        <h2>4. 聯絡我們</h2>
+        <p>如果您對本隱私權政策有任何疑問，歡迎來信至：<a href="mailto:shakehealthtw@gmail.com">shakehealthtw@gmail.com</a></p>
     </div>
 </body>
 
